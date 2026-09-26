@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #2196F3;
+    color: white;
+    padding: 15px 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    margin-bottom: 15px;
+}
+
+/* Danh sach san pham */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 250px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.product-card h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.product-card h3 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.product-card h3 a:hover {
+    color: #2196F3;
+}
+
+.product-card .price {
+    color: red;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Form tim kiem */
+.search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.search-form input,
+.search-form select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-form button {
+    padding: 8px 16px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.search-form button:hover {
+    background-color: #1976D2;
+}
+
+/* Chi tiet san pham */
+.product-detail {
+    display: flex;
+    gap: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.product-detail img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-detail .product-info h2 {
+    margin-bottom: 10px;
+}
+
+.product-detail .product-info .price {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #2196F3;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-back:hover {
+    background-color: #1976D2;
+}

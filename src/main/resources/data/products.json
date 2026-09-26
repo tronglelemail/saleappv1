@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "iPhone 15 Pro Max",
+        "description": "Điện thoại Apple iPhone 15 Pro Max 256GB",
+        "price": 29990000,
+        "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-15-pro-max_3.png",
+        "categoryId": 1
+    },
+    {
+        "id": 2,
+        "name": "Samsung Galaxy S24 Ultra",
+        "description": "Điện thoại Samsung Galaxy S24 Ultra 256GB",
+        "price": 27990000,
+        "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-s24-ultra_2_.png",
+        "categoryId": 1
+    },
+    {
+        "id": 3,
+        "name": "Xiaomi 14",
+        "description": "Điện thoại Xiaomi 14 256GB",
+        "price": 12990000,
+        "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-14_1_.png",
+        "categoryId": 1
+    },
+    {
+        "id": 4,
+        "name": "iPad Pro M4",
+        "description": "Máy tính bảng Apple iPad Pro M4 11 inch 256GB",
+        "price": 28990000,
+        "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/ipad-pro-m4-11-inch.png",
+        "categoryId": 2
+    }
+]

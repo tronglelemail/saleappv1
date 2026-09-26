@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÁN HÀNG TRỰC TUYẾN</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <header>
+        <h1>BÁN HÀNG TRỰC TUYẾN</h1>
+        <nav>
+            <ul>
+                <li><a th:href="@{/products}">Tất cả</a></li>
+                <li><a th:href="@{/products?categoryId=1}">Điện thoại di động</a></li>
+                <li><a th:href="@{/products?categoryId=2}">Máy tính bảng</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>Chào mừng bạn đến với cửa hàng trực tuyến!</p>
+    </main>
+</body>
+</html>

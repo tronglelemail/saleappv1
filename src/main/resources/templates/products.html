@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <header>
+        <h1>BÁN HÀNG TRỰC TUYẾN</h1>
+        <nav>
+            <ul>
+                <li><a th:href="@{/products}">Tất cả</a></li>
+                <li><a th:href="@{/products?categoryId=1}">Điện thoại di động</a></li>
+                <li><a th:href="@{/products?categoryId=2}">Máy tính bảng</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Danh sách sản phẩm</h2>
+
+        <form class="search-form" th:action="@{/products}" method="get">
+            <input type="text" name="keyword" placeholder="Tìm theo tên..."
+                   th:value="${keyword}">
+            <input type="number" name="fromPrice" placeholder="Giá từ"
+                   th:value="${fromPrice}">
+            <input type="number" name="toPrice" placeholder="Giá đến"
+                   th:value="${toPrice}">
+            <select name="categoryId">
+                <option value="">-- Tất cả danh mục --</option>
+                <option value="1" th:selected="${categoryId != null and categoryId == 1}">Điện thoại di động</option>
+                <option value="2" th:selected="${categoryId != null and categoryId == 2}">Máy tính bảng</option>
+            </select>
+            <button type="submit">Tìm kiếm</button>
+        </form>
+
+        <div class="product-list">
+            <div class="product-card" th:each="p : ${products}">
+                <img th:src="${p.image}" th:alt="${p.name}">
+                <h3><a th:href="@{/products/{id}(id=${p.id})}" th:text="${p.name}">Tên sản phẩm</a></h3>
+                <p th:text="${p.description}">Mô tả</p>
+                <p class="price" th:text="${#numbers.formatDecimal(p.price, 0, 'COMMA', 0, 'POINT')} + ' VNĐ'">Giá</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
